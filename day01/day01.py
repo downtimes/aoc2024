@@ -18,7 +18,8 @@ def p2(parsed):
 if __name__ == '__main__':
     with open("day01/input.txt", "r") as f:
         parsed = parse(f.readlines())
-        i1, i2 = tee(parsed)
-        p1 = p1(i1)
-        p2 = p2(i2)
-        print(p1, p2)
+
+    i1, i2 = tee(parsed)
+    p1 = p1(i1)
+    p2 = p2(i2)
+    print(p1, p2)
